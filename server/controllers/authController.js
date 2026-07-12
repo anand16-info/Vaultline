@@ -65,24 +65,32 @@ export const registerUser = async (req, res, next) => {
 // @route POST /api/auth/login
 export const loginUser = async (req, res, next) => {
   try {
-    const { email } = req.body;
+    const { email, password } = req.body;
 
-    if (!email) {
+    if (!email || !password) {
       return res.status(400).json({
         success: false,
-        message: "Please provide email",
+        message: "Please provide email and password",
       });
     }
 
-    // Database me koi user hai?
-    let user = await User.findOne().select("+password");
+    const user = await User.findOne({
+      email: email.toLowerCase(),
+    }).select("+password");
 
-    // Agar nahi hai to automatically demo user create kar do
     if (!user) {
-      user = await User.create({
-        name: "Demo User",
-        email: "demo@gmail.com",
-        password: "123456",
+      return res.status(401).json({
+        success: false,
+        message: "Invalid email or password",
+      });
+    }
+
+    const isMatch = await user.comparePassword(password);
+
+    if (!isMatch) {
+      return res.status(401).json({
+        success: false,
+        message: "Invalid email or password",
       });
     }
 
