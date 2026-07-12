@@ -105,34 +105,36 @@ The application follows a clean **Luxury Minimal** design with a black-and-gold 
 
 # 📸 Screenshots
 
-> Save screenshots inside **docs/screenshots/**
+<p align="center">
+<img src="./images/0.png">
+</p>
 
-| Dashboard | Analytics |
-|-----------|-----------|
-| ![](docs/screenshots/dashboard.png) | ![](docs/screenshots/analytics.png) |
+| Dashboard           | Analytics           |
+| ------------------- | ------------------- |
+| ![](./images/1.png) | ![](./images/2.png) |
 
-| Transactions | Budget Planner |
-|--------------|----------------|
-| ![](docs/screenshots/transactions.png) | ![](docs/screenshots/budget.png) |
+| Transactions        | Budget Planner      |
+| ------------------- | ------------------- |
+| ![](./images/3.png) | ![](./images/4.png) |
 
-| Savings Goals | Loan Calculator |
-|---------------|-----------------|
-| ![](docs/screenshots/goals.png) | ![](docs/screenshots/loan.png) |
+| Savings Goals       | Loan Calculator     |
+| ------------------- | ------------------- |
+| ![](./images/5.png) | ![](./images/6.png) |
 
-| Login | Mobile View |
-|-------|-------------|
-| ![](docs/screenshots/login.png) | <img src="docs/screenshots/mobile.png" width="260"> |
+| Login               | Mobile View                             |
+| ------------------- | --------------------------------------- |
+| ![](./images/7.png) | <img src="./images/8.jpeg" width="260"> |
 
 ---
 
 # 🛠 Tech Stack
 
-| Layer | Technologies |
-|--------|--------------|
-| Frontend | React 18, Vite, React Router, Axios, Recharts, Lucide Icons |
-| Backend | Node.js, Express.js, JWT, bcryptjs |
-| Database | MongoDB, Mongoose |
-| Deployment | Vercel, MongoDB Atlas |
+| Layer      | Technologies                                                |
+| ---------- | ----------------------------------------------------------- |
+| Frontend   | React 18, Vite, React Router, Axios, Recharts, Lucide Icons |
+| Backend    | Node.js, Express.js, JWT, bcryptjs                          |
+| Database   | MongoDB, Mongoose                                           |
+| Deployment | Vercel, MongoDB Atlas                                       |
 
 ---
 
